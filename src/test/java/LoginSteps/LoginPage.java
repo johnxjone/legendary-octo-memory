@@ -103,7 +103,7 @@ public class LoginPage {
 
 	public void Printscreen() throws IOException {
 
-		TakesScreenshot Screenshot = (TakesScreenshot) Hooks.gerDriver;
+		TakesScreenshot Screenshot = (TakesScreenshot) Hooks.getDriver();
 		File FileSrc = Screenshot.getScreenshotAs(OutputType.FILE);
 		File DisFile = new File("/Users/johnmac/Downloads/screenshot.png");
 		FileUtils.copyFile(FileSrc, DisFile);

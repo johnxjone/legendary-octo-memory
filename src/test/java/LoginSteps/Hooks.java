@@ -12,7 +12,7 @@ import io.cucumber.java.BeforeAll;
 public class Hooks {
 	
 	static WebDriver driver;
-	public static TakesScreenshot gerDriver;
+
 	
 	@BeforeAll
 	public static void main() {
