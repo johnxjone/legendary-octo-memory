@@ -2,7 +2,6 @@ package LoginSteps;
 
 import java.time.Duration;
 
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,7 +19,7 @@ public class Hooks {
 		
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(0));
 		
 	}
 	@AfterAll
