@@ -1,7 +1,6 @@
 Feature: Tabs related opetion and function test
 
   Scenario: One by one tab related function below
-    Given click Dynamic Start button
-    Then Check the colour Start
-    And click Dynamic Stop button
-    Then Check the colour Stop
+    Given I click the dynamic "Start" button
+    Then I click the dynamic "Stop" button
+

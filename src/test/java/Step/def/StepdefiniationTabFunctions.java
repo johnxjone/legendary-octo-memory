@@ -21,31 +21,16 @@ WebDriver driver;
 		driver.get("https://testautomationpractice.blogspot.com/#");
 		
 	}
-
-	@Given("click Dynamic Start button")
-	public void click_dynamic_start_button() {
-		
-		TabRelatedStepsOBJ.Start_Click();
-
-	}
-
-	@Then("Check the colour Start")
-	public void check_the_colour_start() {
-		
-		TabRelatedStepsOBJ.Before_Start_Colour();
-
-	}
-
-	@Then("click Dynamic Stop button")
-	public void click_dynamic_stop_button() {
-		TabRelatedStepsOBJ.stop_Click();
-
-	}
-
-	@Then("Check the colour Stop")
-	public void check_the_colour_stop() {
-		TabRelatedStepsOBJ.Color_Check();
+	
+	
+	@Given("I click the dynamic {string} button")
+	public void clickDynamicButton(String buttonName) {
+		TabRelatedStepsOBJ.clickButton(buttonName);
 
 	}
 
 }
+
+	
+
+
