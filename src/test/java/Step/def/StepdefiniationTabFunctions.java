@@ -35,6 +35,10 @@ WebDriver driver;
 	    
 		TabRelatedStepsOBJ.Verifying_Start_Button();
 	}
+	@Then("verify the simple Alert massage")
+	public void verify_the_simple_alert_massage() {
+	   TabRelatedStepsOBJ.Alerts_Massage();
+	}
 
 }
 
