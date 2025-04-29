@@ -25,8 +25,15 @@ WebDriver driver;
 	
 	@Given("I click the dynamic {string} button")
 	public void clickDynamicButton(String buttonName) {
+		
 		TabRelatedStepsOBJ.clickButton(buttonName);
 
+	}
+	
+	@Then("I have verify state Button and stop button")
+	public void i_have_verify_state_button_and_stop_button() {
+	    
+		TabRelatedStepsOBJ.Verifying_Start_Button();
 	}
 
 }

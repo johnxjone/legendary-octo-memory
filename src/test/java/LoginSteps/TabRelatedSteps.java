@@ -1,5 +1,6 @@
 package LoginSteps;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -22,4 +23,14 @@ public class TabRelatedSteps {
 			throw new IllegalArgumentException("Unknown button: " + name);
 		}
 	}
+
+	public void Verifying_Start_Button() {
+
+		String actual = start.getText();
+		String expected = "start";
+
+		Assert.assertEquals(actual, expected, "start");
+
+	}
+
 }
