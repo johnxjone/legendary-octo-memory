@@ -5,4 +5,3 @@ Feature: Tabs related opetion and function test
     Then I click the dynamic "Stop" button
     And I have verify state Button and stop button
     And verify the simple Alert massage
-
